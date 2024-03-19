@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Interface</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="./Screenshot 2024-03-20 at 2.05.59 AM.png" alt="Logo">
+          <h2>StartUp Mentor</h2>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="./login.html">login/signup</a>
+        </div>
+      </nav>
+
+<div class="container">
+  <div class="sidebar">
+    <!-- <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <h2>ChatGPT</h2>
+    </div> -->
+    <div class="history">
+      <h3>Chat History</h3>
+      <div class="chat-history" id="chat-history">
+        <h3>user1</h3>
+        
+      </div>
+    </div>
+    <div class="options">
+        <h3>Options</h3>
+        <ul>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Feedback</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://twitter.com/chatgpt" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://facebook.com/chatgpt" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://instagram.com/chatgpt" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://linkedin.com/company/chatgpt" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="support">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li><a href="#">Contact Support</a></li>
+        <li><a href="#">Knowledge Base</a></li>
+        <li><a href="#">Report an Issue</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="main-content">
+    <div class="chat-box" id="chat-box">
+        <div class="message received">
+            <p>Hello! How can I assist you today?</p>
+        </div>
+        <div class="message sent">
+            <p>Hi, I'm interested in learning more about startup funding options.</p>
+        </div>
+        <div class="message received">
+            <p>Great! Startups often explore various funding routes like venture capital, angel investors, or crowdfunding. Which one are you considering?</p>
+        </div>
+        <div class="message sent">
+            <p>I'm leaning towards venture capital. Any tips on how to approach VCs?</p>
+        </div>
+        <div class="message received">
+            <p>When approaching VCs, it's crucial to have a solid pitch deck outlining your business idea, market opportunity, team, and financial projections. Would you like more detailed guidance on creating a pitch deck?</p>
+        </div>
+        <div class="message sent">
+            <p>Yes, please. What key elements should I include in my pitch deck?</p>
+        </div>
+        <div class="message received">
+            <p>Key elements of a pitch deck include a compelling problem statement, your solution, target market, business model, traction, competition analysis, and financial projections. Each slide should be concise and visually engaging.</p>
+        </div>
+        <div class="message sent">
+            <p>Thank you! Are there any common mistakes I should avoid when pitching to VCs?</p>
+        </div>
+        <div class="message received">
+            <p>Avoid common mistakes such as lack of market validation, unrealistic financial projections, ignoring competition, or not having a clear ask. It's essential to be well-prepared and confident during your pitch.</p>
+        </div>
+        <!-- More conversation messages can be added here -->
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
