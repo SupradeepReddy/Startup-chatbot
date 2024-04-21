@@ -4,104 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ChatGPT Interface</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 <link rel="stylesheet" href="./index.css">
+<style>
+    .startup-info {
+        padding: 20px; /* Adjust the padding as needed */
+        text-align: center; /* Align the content to the center */
+    }
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="./Screenshot 2024-03-20 at 2.05.59 AM.png" alt="Logo">
-          <h2>StartUp Mentor</h2>
-        </div>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-          <a href="./login.html">login/signup</a>
-        </div>
-      </nav>
+<nav class="navbar">
+    <div class="logo">
+        <h1>StartUp Mentor</h1>
+    </div>
+    <div class="nav-links">
+        <a href="./home.htm">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="./login.htm">Login/Signup</a>
+    </div>
+</nav>
 
 <div class="container">
-  <div class="sidebar">
-    <!-- <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <h2>ChatGPT</h2>
-    </div> -->
-    <div class="history">
-      <h3>Chat History</h3>
-      <div class="chat-history" id="chat-history">
-        <h3>user1</h3>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./logo1.jpg" alt="Logo">
+            <h2>STARTUP MENTOR</h2>
+            <!-- Theme Change Button -->
+            <button id="toggleDark">Switch Theme</button>
+        </div>
         
-      </div>
+        <div class="options">
+            <h3><b>OPTIONS</b></h3>
+            <ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li><a href="https://twitter.com/chatgpt" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://facebook.com/chatgpt" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://instagram.com/chatgpt" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://linkedin.com/company/chatgpt" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="options">
-        <h3>Options</h3>
-        <ul>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Notifications</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Feedback</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div class="social-links">
-        <h3>Follow Us</h3>
-        <ul>
-          <li><a href="https://twitter.com/chatgpt" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="https://facebook.com/chatgpt" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="https://instagram.com/chatgpt" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://linkedin.com/company/chatgpt" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
-      </div>
-      <div class="support">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Live Chat</a></li>
-          <li><a href="#">Contact Support</a></li>
-        <li><a href="#">Knowledge Base</a></li>
-        <li><a href="#">Report an Issue</a></li>
-        </ul>
-      </div>
-  </div>
 
-  <div class="main-content">
-    <div class="chat-box" id="chat-box">
-        <div class="message received">
-            <p>Hello! How can I assist you today?</p>
+    <section class="main-content">
+        <div class="startup-info">
+            <h2>Startup Resources</h2>
+            <iframe src="https://en.wikipedia.org/wiki/Startup_company" frameborder="0" style="width: 100%; height: calc(100vh - 40px);"></iframe>
         </div>
-        <div class="message sent">
-            <p>Hi, I'm interested in learning more about startup funding options.</p>
-        </div>
-        <div class="message received">
-            <p>Great! Startups often explore various funding routes like venture capital, angel investors, or crowdfunding. Which one are you considering?</p>
-        </div>
-        <div class="message sent">
-            <p>I'm leaning towards venture capital. Any tips on how to approach VCs?</p>
-        </div>
-        <div class="message received">
-            <p>When approaching VCs, it's crucial to have a solid pitch deck outlining your business idea, market opportunity, team, and financial projections. Would you like more detailed guidance on creating a pitch deck?</p>
-        </div>
-        <div class="message sent">
-            <p>Yes, please. What key elements should I include in my pitch deck?</p>
-        </div>
-        <div class="message received">
-            <p>Key elements of a pitch deck include a compelling problem statement, your solution, target market, business model, traction, competition analysis, and financial projections. Each slide should be concise and visually engaging.</p>
-        </div>
-        <div class="message sent">
-            <p>Thank you! Are there any common mistakes I should avoid when pitching to VCs?</p>
-        </div>
-        <div class="message received">
-            <p>Avoid common mistakes such as lack of market validation, unrealistic financial projections, ignoring competition, or not having a clear ask. It's essential to be well-prepared and confident during your pitch.</p>
-        </div>
-        <!-- More conversation messages can be added here -->
-    </div>
-    <input type="text" id="user-input" placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button>
-  </div>
+    </section>
+</div>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/64a2eb8a-3903-4742-a136-64ee879cea0f/webchat/config.js" defer></script>
+<script>
+// JavaScript for theme change functionality
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+const navbar = document.querySelector('.navbar');
+const sidebar = document.querySelector('.sidebar');
 
-<script src="script.js"></script>
+toggle.addEventListener('click', function(){
+    toggle.classList.toggle('bi-moon');
+    if(toggle.classList.contains('bi-moon')){
+        body.style.background = '#1e1e1e'; // Dark gray
+        body.style.color = '#dcdcdc'; // Light gray text
+        navbar.style.backgroundColor = '#333'; // Dark gray
+        navbar.style.color = '#fff';
+        sidebar.style.backgroundColor = '#222'; // Darker gray
+        sidebar.style.color = '#fff';
+        body.style.transition = '5s';
+    } else {
+        body.style.background = 'white';
+        body.style.color = 'black';
+        navbar.style.backgroundColor = '#3f51b5'; // Dark blue
+        navbar.style.color = '#fff';
+        sidebar.style.backgroundColor = '#303f9f'; // Dark blue
+        sidebar.style.color = '#fff';
+        body.style.transition = '5s';
+    }
+});
+</script>
 </body>
 </html>
